@@ -4,6 +4,8 @@
     <title>The People&rsquo;s Refinement Logic</title>
     <link href='https://fonts.googleapis.com/css?family=IM+Fell+French+Canon:400,400italic' rel='stylesheet' type='text/css'>
     <link href='https://fonts.googleapis.com/css?family=Oleo+Script:400,700|Allan:400,700|Contrail+One|Wellfleet' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" type="text/css" href="/fonts/PragmataPro.css"/>
+
 
     <style type="text/css">
       @font-face {
@@ -26,6 +28,11 @@
         color: #e84644;
       }
 
+      .slogan {
+        font-family: 'propagandaregular';
+        font-size:0.9em;
+      }
+
       .star {
         color: #e84644;
         font-size: 5em;
@@ -46,6 +53,7 @@
        position: relative;
        top: 50%;
        transform: translateY(-50%);
+       font-size:2.2em;
       }
 
       article {
@@ -55,13 +63,14 @@
         background-size: 6em;
         min-height: 40em;
         padding-left: 8em;
-        max-width: 750px;
-        font-family: 'Contrail One';
-        font-size: 1.4em;
+        max-width: 800px;
+        font-family: 'PragmataPro';
+        font-size: 1.2em;
+        line-height: 1.4em;
       }
 
       article h1 {
-        font-family: 'Oleo Script', cursive;
+        color: #135CB7;
       }
 
       .amp {
@@ -125,39 +134,40 @@
     <header>
       <div class="star">&#9733;</div>
       <h1>
-        The People&rsquo;s Refinement Logic
+        The People's Refinement Logic
       </h1>
     </header>
     <article>
 
       <p>
-        <span class="revolutionary">Red</span>PRL is a new proof assistant in the <a href="http://www.nuprl.org">Nuprl</a> tradition for Nominal
-        Computational Type Theory.
+        <span class="revolutionary">Red</span><b>PRL</b> is a proof assistant for Computational Cubical Type Theory
+        being developed at Carnegie Mellon University by Jon Sterling under <a href="https://www.cs.cmu.edu/~rwh/">Robert Harper</a>,
+        inspired by <a href="http://www.nuprl.org">Nuprl</a>.
       </p>
 
       <p>
-        Open-source contributors are the shock troops of the revolution! <a href="https://github.com/RedPRL/sml-redprl">Join us now.</a>
+      <span class="slogan">Open-source contributors are the shock troops of the revolution!</span> <a href="https://github.com/RedPRL/sml-redprl">Join us now.</a>
       </p>
 
       <h1>Papers <span class="amp">&amp;</span> Talks</h1>
       <ul>
-        <li>Sterling, J. and Morrison, D. <a href="/pdfs/type-refinements-for-the-working-class.pdf">Type Refinements for the Working Class</a>, 2016.</li>
-        <li>Sterling, J. and Morrison, D. <a href="/pdfs/syntax-and-semantics-of-abts.pdf">Syntax and Semantics of Abstract Binding Trees</a>, 2016.</li>
-        <li>Sterling, J. <a href="/pdfs/designing-the-peoples-refinement-logic.pdf">Designing the People's Refinement Logic</a>, 2016. OPLSS Student Talks.</li>
+        <li>Sterling. <a href="/pdfs/pl-lunch-talk.pdf">Cubical RedPRL: The People's Refinement Logic</a>, 2016. CMU PL Lunch Talk.</li>
+        <li>Sterling. <a href="/pdfs/designing-the-peoples-refinement-logic.pdf">Designing the People's Refinement Logic</a>, 2016. OPLSS Student Talks.</li>
+        <li>Sterling and Morrison. <a href="/pdfs/syntax-and-semantics-of-abts.pdf">Syntax and Semantics of Abstract Binding Trees</a>, 2016.</li>
+        <li>Sterling and Morrison. <a href="/pdfs/type-refinements-for-the-working-class.pdf">Type Refinements for the Working Class</a>, 2016.</li>
       </ul>
 
       <h1>Features</h1>
       <ul>
+        <li>Strict / exact equality</li>
+        <li>Identification (path) types</li>
         <li>Functional extensionality</li>
-        <li>Squash and subset types</li>
-        <li>Computational congruence</li>
-        <li>Dependent refinement</li>
+        <li>Dependent proof refinement</li>
         <li>Well-scoped tactic scripts</li>
-        <li>Computational effects: fresh name generation, local exceptions</li>
       </ul>
 
       <h1>Download</h1>
-      <span class="revolutionary">Red</span>PRL is written in <a href="http://sml-family.org/">Standard ML</a>, and is available for download on <a href="http://github.com/redprl/sml-redprl">GitHub</a>.
+      <span class="revolutionary">Red</span><b>PRL</b> is written in <a href="http://sml-family.org/">Standard ML</a>, and is available for download on <a href="http://github.com/redprl/sml-redprl">GitHub</a>.
 
 
       <h1>History <span class="amp">&amp;</span> Philosophy</h1>
@@ -185,7 +195,7 @@
       <p>
         Jon Sterling, Danny Gratzer, Vincent Rahli, Darin Morrison, David
         Christiansen, Eugene Akentyev and Ayberk Tosun contributed to the
-        design and implementation of Classic JonPRL and <span class="revolutionary">Red</span>PRL.
+        design and implementation of Classic JonPRL and <span class="revolutionary">Red</span><b>PRL</b>.
       </p >
 
     </article>

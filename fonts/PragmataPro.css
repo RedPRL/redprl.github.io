@@ -1,0 +1,15 @@
+
+@font-face {
+  font-family: 'PragmataPro';
+  src: url('/fonts/PragmataPro-Regular.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'PragmataPro';
+  src: url('/fonts/PragmataPro-Bold.eot') format('embedded-opentype'),
+		   url('/fonts/PragmataPro-Bold.woff') format('woff');
+  font-weight: bold;
+  font-style: normal;
+}
