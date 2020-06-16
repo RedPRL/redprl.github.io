@@ -1,6 +1,6 @@
 html, button, input, select, textarea,
 .pure-g [class *= "pure-u"] {
-    font-family: 'PragmataPro' !important;
+  font-family: 'Noto Sans', sans-serif;
 }
 
 .wrapper {
@@ -9,7 +9,6 @@ html, button, input, select, textarea,
   margin-right: auto;
   max-width: 1100px;
   line-height: 1.4em;
-  font-family: 'PragmataPro';
   font-size: 1.2em;
 }
 
