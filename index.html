@@ -14,23 +14,23 @@
     <div class="wrapper">
       <h1>The <span class="revolutionary">red</span>* family of proof assistants</h1>
 
-      <div class="pure-g">
-        <div class="l-box pure-u-1 pure-u-lg-1-4 box">
-          <a href="http://github.com/redprl/cooltt">
+      <div class="pure-g" id="boxes">
+        <div class="pure-u-1-2 pure-u-lg-1-4 box">
+          <a href="#cooltt">
             <h2><span class="cool">cool</span>tt</h2>
             <p>A prototype proof assistant for Cartesian cubical type theory.</p>
           </a>
         </div>
 
-        <div class="l-box pure-u-1 pure-u-lg-1-4 box">
-          <a href="http://github.com/redprl/redtt">
+        <div class="pure-u-1-2 pure-u-lg-1-4 box">
+          <a href="#redtt">
             <h2><span class="revolutionary">red</span>tt</h2>
             <p>A proof assistant for Cartesian cubical type theory.</p>
           </a>
         </div>
 
-        <div class="l-box pure-u-1 pure-u-lg-1-4 box">
-          <a href="http://github.com/redprl/sml-redprl">
+        <div class="pure-u-1-2 pure-u-lg-1-4 box">
+          <a href="#redprl">
             <h2><span class="revolutionary">Red</span>PRL</h2>
             <p>A Nuprl-style proof assistant for computational Cartesian cubical type theory.</p>
           </a>
@@ -49,9 +49,10 @@
         <a href="https://www.cs.cmu.edu/~rwh/">Robert Harper</a>.
         </p>
 
-        <h2>The <strong><span class="cool">cool</span>tt</span></strong> proof assistant</h2>
+        <h2 id="cooltt">The <strong><span class="cool">cool</span>tt</span></strong> proof assistant</h2>
+
         <div class="pure-g">
-          <div class="pure-u-1 pure-u-md-3-5">
+          <div class="pure-u-1 pure-u-lg-3-5">
             <p>
             We are currently developing <strong><span class="cool">cool</span>tt</strong>, a prototype proof assistant for Cartesian
             cubical type theory, building on our previous work on the
@@ -70,25 +71,29 @@
             </p>
           </div>
 
-          <div class="pure-u-1 pure-u-md-2-5">
-            <img style="padding-left:2em; padding-right:2em; max-width:3in"; src="img/cooltt-screenshot.png"/>
+          <div class="pure-u-1 pure-u-lg-2-5 image-box">
+            <img class="pure-img" style="max-width:4in" src="img/cooltt-screenshot.png" />
           </div>
         </div>
 
-        <h2>The <strong><span class="revolutionary">red</span>tt</strong> proof assistant</h2>
+        <h2 id="redtt">The <strong><span class="revolutionary">red</span>tt</strong> proof assistant</h2>
 
         <p>
         A proof assistant for Cartesian cubical type theory. Notable features include extension types,
         user-defined (parametric) higher inductive types, and rudimentary higher-order unification;
-        <strong><span class="revolutionary">red</span>tt</strong> pioneered the <em>boundary-sensitive</em> treatment of holes that now appears in <a href="https://agda.readthedocs.io/en/latest/language/cubical.html">Cubical Agda</a> and <strong><span class="cool">cool</span>tt</strong>.
-        </p>
+        <strong><span class="revolutionary">red</span>tt</strong> pioneered the
+        <em>boundary-sensitive</em> treatment of holes that now appears in
+        <a href="https://agda.readthedocs.io/en/latest/language/cubical.html">Cubical Agda</a> and
+        <strong><span class="cool">cool</span>tt</strong>.</p>
 
         <ul>
           <li><a href="https://github.com/redprl/redtt">Source on GitHub</a></li>
-          <li><a href="https://github.com/RedPRL/redtt/tree/master/library">The <strong><span class="revolutionary">red</span>tt</strong> mathematical library</a></li>
+          <li><a href="https://github.com/RedPRL/redtt/tree/master/library">The
+              <strong><span class="revolutionary">red</span>tt</strong>
+              mathematical library</a></li>
         </ul>
 
-        <h2>The <span class="revolutionary">Red</span>PRL proof assistant</h2>
+        <h2 id="redprl">The <span class="revolutionary">Red</span>PRL proof assistant</h2>
 
         <p>
         A tactic-based proof assistant for computational Cartesian cubical type theory inspired by

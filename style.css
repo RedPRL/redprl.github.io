@@ -1,6 +1,5 @@
 html, button, input, select, textarea,
 .pure-g [class *= "pure-u"] {
-    /* Set your content font stack here: */
     font-family: 'PragmataPro' !important;
 }
 
@@ -12,6 +11,10 @@ html, button, input, select, textarea,
   line-height: 1.4em;
   font-family: 'PragmataPro';
   font-size: 1.2em;
+}
+
+.pure-g > div {
+  box-sizing: border-box;
 }
 
 .box {
@@ -66,8 +69,15 @@ ul li:before {
   padding-top: 0.5em;
 }
 
-.pure-g {
+#boxes {
   justify-content: center;
+}
+
+@media screen and (min-width: 64em) {
+  .image-box {
+    padding-left: 2em;
+    padding-right: 2em;
+  }
 }
 
 h1 {
