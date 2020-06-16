@@ -1,191 +1,102 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en-US">
   <head>
     <title>The People&rsquo;s Refinement Logic</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
     <link href='https://fonts.googleapis.com/css?family=IM+Fell+French+Canon:400,400italic' rel='stylesheet' type='text/css'>
-    <link href='https://fonts.googleapis.com/css?family=Oleo+Script:400,700|Allan:400,700|Contrail+One|Wellfleet' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="style.css" />
     <link rel="stylesheet" type="text/css" href="/fonts/PragmataPro.css"/>
-
-
-    <style type="text/css">
-      @font-face {
-        font-family: 'propagandaregular';
-        src: url('fonts/propagan-webfont.eot');
-        src: url('fonts/propagan-webfont.eot?#iefix') format('embedded-opentype'),
-          url('fonts/propagan-webfont.woff2') format('woff2'),
-          url('fonts/propagan-webfont.woff') format('woff'),
-          url('fonts/propagan-webfont.ttf') format('truetype'),
-          url('fonts/propagan-webfont.svg#propagandaregular') format('svg');
-        font-weight: normal;
-        font-style: normal;
-      }
-
-      body {
-        margin: 2em;
-      }
-
-      strong {
-        color: #e84644;
-      }
-
-      .slogan {
-        font-family: 'propagandaregular';
-        font-size:0.9em;
-      }
-
-      .star {
-        color: #e84644;
-        font-size: 5em;
-        float: left;
-        top: 50%;
-        transform: translateY(-50%);
-        width: 1.5em;
-        text-align: center;
-      }
-
-      body {
-        margin-left: 2em;
-        margin-top: 4em;
-      }
-
-      header h1 {
-       font-family: "propagandaregular";
-       position: relative;
-       top: 50%;
-       transform: translateY(-50%);
-       font-size:2.2em;
-      }
-
-      article {
-        background-image: url("img/luminaries.png");
-        background-repeat: no-repeat;
-        background-position: top left;
-        background-size: 6em;
-        min-height: 40em;
-        padding-left: 8em;
-        max-width: 1100px;
-        font-family: 'PragmataPro';
-        font-size: 1.2em;
-        line-height: 1.4em;
-      }
-
-      article h1 {
-        color: #135CB7;
-      }
-
-      .amp {
-        font-family: 'IM Fell French Canon', serif;
-        font-size: 115%;
-        font-style: italic;
-        font-weight: normal;
-        padding-left: 5px;
-        padding-right: 5px;
-      }
-
-      ul {
-        list-style: none;
-        padding: 0px;
-      }
-
-      ul li:before {
-        content: '\2605';
-        color: #e84644;
-        margin: 0 .5em;
-      }
-
-      del {
-        color: #e84644;
-        opacity: 1.0;
-      }
-
-      del span {
-        color: #135CB7;
-        opacity: 0.8;
-      }
-
-      del del {
-        color: #135CB7;
-        opacity: 1.0;
-      }
-
-      del del span {
-        color: #e84644;
-        opacity: 0.8;
-      }
-
-      .revolutionary {
-        font-weight: bold;
-        color: #e84644;
-      }
-
-      .reactionary {
-        font-weight: bold;
-        color: #135CB7;
-      }
-
-      a {
-        color: inherit;
-      }
-
-    </style>
+    <link rel="stylesheet" href="https://unpkg.com/purecss@2.0.3/build/pure-min.css" integrity="sha384-cg6SkqEOCV1NbJoCu11+bm0NvBRc8IYLRGXkmNrqUBfTjmMYwNKPWBTIKyw9mHNJ" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://unpkg.com/purecss@2.0.3/build/grids-responsive-min.css">
   </head>
 
   <body>
-    <header>
-      <div class="star">&#9733;</div>
-      <h1>
-        The People's Refinement Logic
-      </h1>
-    </header>
-    <article>
+    <div class="wrapper">
+      <h1>The <span class="revolutionary">red</span>* family of proof assistants</h1>
 
-      <p>
-        The <span class="revolutionary">Red</span><b>PRL</b> Development Team has developed a number
-        of proof assistants for Cartesian cubical type theory at Carnegie Mellon University under
-        the supervision of <a href="https://www.cs.cmu.edu/~rwh/">Robert Harper</a>.
-      </p>
+      <div class="pure-g">
+        <div class="l-box pure-u-1 pure-u-lg-1-4 box">
+          <a href="http://github.com/redprl/cooltt">
+            <h2>cooltt</h2>
+            <p>A prototype typechecker for Cartesian cubical type theory.</p>
+          </a>
+        </div>
 
-      <p>
-        <span class="slogan">Open-source contributors are the shock troops of the revolution!</span>
-        <a href="https://github.com/RedPRL/sml-redprl">Join us now.</a>
-      </p>
+        <div class="l-box pure-u-1 pure-u-lg-1-4 box">
+          <a href="http://github.com/redprl/redtt">
+            <h2><span class="revolutionary">red</span>tt</h2>
+            <p>A proof assistant for Cartesian cubical type theory.</p>
+          </a>
+        </div>
 
-      <h1>cooltt</h1>
+        <div class="l-box pure-u-1 pure-u-lg-1-4 box">
+          <a href="http://github.com/redprl/sml-redprl">
+            <h2><span class="revolutionary">Red</span>PRL</h2>
+            <p>A Nuprl-style proof assistant for computational Cartesian cubical type theory.</p>
+          </a>
+        </div>
+      </div> <!-- /.pure-g -->
 
-      <p>
-        We are currently developing <b>cooltt</b>, a proof assistant for Cartesian cubical type
-        theory. It is available on <a href="http://github.com/redprl/cooltt">GitHub</a>. The
-        internals are lightly documented <a href="cooltt">here</a>.
-      </p>
+      <div class="content">
+        <p>
+        The <span class="revolutionary">Red</span><b>PRL</b> Development Team&mdash;Carlo Angiuli,
+        Evan Cavallo, Kuen-Bang Hou (Favonia) and Jon Sterling&mdash;has developed several
+        experimental proof assistants for Cartesian cubical type theory under the supervision of
+        <a href="https://www.cs.cmu.edu/~rwh/">Robert Harper</a>.
+        </p>
 
-      <h1><span class="revolutionary">red</span>tt</h1>
+        <h2>cooltt</h2>
 
-      <p>
-        <span class="revolutionary">red</span><b>tt</b> is a proof assistant for Cartesian cubical
-        type theory. It is available on <a href="http://github.com/redprl/redtt">GitHub</a>.
-      </p>
+        <p>
+        We are currently developing <strong>cooltt</strong>, a prototype typechecker for Cartesian
+        cubical type theory, which builds on our previous work on the
+        <strong><span class="revolutionary">red</span>tt</strong> proof assistant.
+        </p>
 
-      <h1><span class="revolutionary">Red</span>PRL</h1>
+        <ul>
+          <li>Source (OCaml) on <a href="http://github.com/redprl/cooltt">GitHub</a></li>
+          <li><a href="cooltt">Internal documentation</a></li>
+        </ul>
 
-      <p>
-        <span class="revolutionary">Red</span><b>PRL</b> is a proof assistant for computational
-        Cartesian cubical type theory inspired by <a href="http://www.nuprl.org">Nuprl</a>. It is
-        written in <a href="http://sml-family.org/">Standard ML</a>, and is available for download
-        on <a href="http://github.com/redprl/sml-redprl">GitHub</a>. Documentation is available
-        <a href="https://redprl.readthedocs.io/en/latest/">here</a>.
-      </p>
+        <p>
+        We welcome new contributors!
+        </p>
 
-      <h2>Contributors</h2>
+        <h2>The <span class="revolutionary">red</span>tt proof assistant</h2>
 
-      <p>
-        <span class="revolutionary">Red</span><b>PRL</b> is developed by Carlo Angiuli, Evan
-        Cavallo, Kuen-Bang Hou (Favonia) and Jon Sterling under the supervision of Robert Harper.
-        <a href="https://github.com/RedPRL/sml-redprl/blob/master/CONTRIBUTORS.md">Full Contributors</a>.
-      </p>
+        <p>
+        A proof assistant for Cartesian cubical type theory. Notable features include extension types,
+        user-defined (parametric) higher inductive types, implicit arguments based on a cubical
+        version of higher-order unification, and a rudimentary tactic language
+        <strong><span class="revolutionary">Red</span>ML</strong>.
+        </p>
 
-      <h2>Acknowledgments</h2>
+        <ul>
+          <li>Source (OCaml) on <a href="http://github.com/redprl/redtt">GitHub</a></li>
+          <li>The <strong><span class="revolutionary">red</span>tt</strong> mathematical library on <a href="https://github.com/RedPRL/redtt/tree/master/library">GitHub</a></li>
+        </ul>
 
-      <p>
+        <h2>The <span class="revolutionary">Red</span>PRL proof assistant</h2>
+
+        <p>
+        A tactic-based proof assistant for computational Cartesian cubical type theory inspired by
+        <a href="http://www.nuprl.org">Nuprl</a>.
+        <strong><span class="revolutionary">Red</span>PRL</strong> implements a two-level cubical
+        type theory which includes univalent universes, some higher inductive types, and strict
+        equality types with equality reflection.
+        </p>
+
+        <ul>
+          <li>Documentation on <a href="https://redprl.readthedocs.io/en/latest/">Read the Docs</a></li>
+          <li>Source (Standard ML) on <a href="http://github.com/redprl/sml-redprl">GitHub</a></li>
+          <li><a href="https://github.com/RedPRL/sml-redprl/blob/master/CONTRIBUTORS.md">Full list of
+              contributors</a></li>
+        </ul>
+
+        <h2>Acknowledgments</h2>
+
+        <p>
         This research was sponsored by the Air Force Office of Scientific Research under grant
         number FA9550-15-1-0053 and the National Science Foundation under grant number DMS-1638352.
         We thank the Logic and Semantics Group at Aarhus University for their hospitality in during
@@ -196,10 +107,8 @@
         views and conclusions contained here are those of the authors and should not be interpreted
         as representing the official policies, either expressed or implied, of any sponsoring
         institution, government or any other entity.
-      </p>
-
-    </article>
+        </p>
+      </div> <!-- /.content -->
+    </div> <!-- /.wrapper -->
   </body>
-
-
 </html>
