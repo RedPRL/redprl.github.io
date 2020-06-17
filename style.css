@@ -54,14 +54,16 @@ a {
 }
 
 ul {
-  list-style: none;
-  padding: 0px;
+  padding-left: 1rem;
+  list-style-type: none;
 }
 
-ul li:before {
-  content: '\2605';
-  color: #e84644;
-  margin: 0 .5em;
+ul li {
+  padding-left: 1.5rem;
+  background-image: url(img/Red_star.svg);
+  background-position: 0px 5px;
+  background-size: 1rem 1rem;
+  background-repeat: no-repeat;
 }
 
 .content .pure-g {
