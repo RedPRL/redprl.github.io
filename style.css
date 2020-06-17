@@ -64,8 +64,13 @@ ul li:before {
   margin: 0 .5em;
 }
 
-.content h2 {
-  padding-top: 0.5em;
+.content .pure-g {
+  padding-top: 1.5em;
+  padding-bottom: 2.5em;
+}
+
+.content .pure-g h2 {
+  margin-top: 0em;
 }
 
 #boxes {
