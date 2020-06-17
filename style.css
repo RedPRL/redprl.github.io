@@ -77,14 +77,17 @@ ul li:before {
   justify-content: center;
 }
 
+h1 {
+  text-align: center;
+  line-height: 1.2em;
+}
+
 @media screen and (min-width: 64em) {
-  .image-box {
-    padding-left: 2em;
+  .left-box {
     padding-right: 2em;
   }
 }
 
-h1 {
-  text-align: center;
-  line-height: 1.2em;
+.right-box {
+  max-width: 450px;
 }
