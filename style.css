@@ -54,15 +54,15 @@ a {
 
 ul {
   margin-top: 0;
-  padding-left: 1rem;
+  padding-left: 1em;
   list-style-type: none;
 }
 
 ul li {
-  padding-left: 1.5rem;
+  padding-left: 1.5em;
   background-image: url(img/Red_star.svg);
-  background-position: 0px .2rem;
-  background-size: 1rem 1rem;
+  background-position: 0px .1em;
+  background-size: 1em 1em;
   background-repeat: no-repeat;
 }
 
