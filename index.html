@@ -16,21 +16,29 @@
       <h1>The <span class="revolutionary">red</span>* family of proof assistants</h1>
 
       <div class="pure-g" id="boxes">
-        <div class="pure-u-2-3 pure-u-md-1-4 box">
+
+        <div class="pure-u-2-3 pure-u-md-1-5 box">
+          <a href="#algaett">
+            <h2><span class="algae">algae</span>tt</h2>
+            <p>An experimental elaborator for dependent type theory using effects and handlers.</p>
+          </a>
+        </div>
+
+        <div class="pure-u-2-3 pure-u-md-1-5 box">
           <a href="#cooltt">
             <h2><span class="cool">cool</span>tt</h2>
             <p>A prototype proof assistant for Cartesian cubical type theory.</p>
           </a>
         </div>
 
-        <div class="pure-u-2-3 pure-u-md-1-4 box">
+        <div class="pure-u-2-3 pure-u-md-1-5 box">
           <a href="#redtt">
             <h2><span class="revolutionary">red</span>tt</h2>
             <p>A proof assistant for Cartesian cubical type theory.</p>
           </a>
         </div>
 
-        <div class="pure-u-2-3 pure-u-md-1-4 box">
+        <div class="pure-u-2-3 pure-u-md-1-5 box">
           <a href="#redprl">
             <h2><span class="revolutionary">Red</span>PRL</h2>
             <p>A Nuprl-style proof assistant for computational Cartesian cubical type theory.</p>
@@ -44,11 +52,36 @@
         (<a href="https://www.cs.cmu.edu/~cangiuli/">Carlo Angiuli</a>,
         <a href="https://www.cs.cmu.edu/~ecavallo/">Evan Cavallo</a>,
         <a href="https://favonia.org/">Kuen-Bang Hou (Favonia)</a>,
+        <a href="https://totbwf.github.io">Reed Mullanix</a>,
         and <a href="http://www.jonmsterling.com/">Jon Sterling</a>) has
         developed several experimental proof assistants for Cartesian cubical
-        type theory under the supervision of
-        <a href="https://www.cs.cmu.edu/~rwh/">Robert Harper</a>.
+        type theory with the collaboration of
+        <a href="https://www.cs.cmu.edu/~rwh/">Robert Harper</a>. We are also building
+        generic components and tools for modularly implementing proof assistants and elaborators.
         </p>
+
+        <div class="pure-g">
+          <div class="pure-u-1 pure-u-lg-3-5 left-box">
+            <h2 id="algaett">The <strong><span class="algae">algae</span>tt</strong> experimental elaborator</h2>
+
+            <p>
+            We are exploring the use of algebraic effects and handlers to structure the modular implementation of proof assistants.
+            Our prototype is called <strong><span class="algae">algae</span>tt</strong>, and is implemented using <a href="https://ocaml.org">OCaml</a> 5's new effect primitives rather than monads.
+            </p>
+
+            <ul>
+              <li><a href="https://github.com/redprl/algaett">Source on GitHub</a></li>
+            </ul>
+
+            <h3>Components</h3>
+            <ul>
+              <li>🦠 <a href="https://github.com/RedPRL/algaeff"><strong><span class="algae">algae</span>ff</strong></a>: reusable effects-based components</li>
+              <li>👹 <a href="https://github.com/RedPRL/yuujinchou">yuujinchou</a>: name modifiers</li>
+              <li>📚 <a href="https://github.com/RedPRL/bantorra">bantorra</a>: extensible library management and path resolution</li>
+              <li>♾️ <a href="https://github.com/RedPRL/mugen">mugen</a>: universe levels, generalizing McBride's <a href="https://personal.cis.strath.ac.uk/conor.mcbride/Crude.pdf">crude but effective stratification</a>
+            </ul>
+          </div>
+        </div>
 
         <div class="pure-g">
           <div class="pure-u-1 pure-u-lg-3-5 left-box">
@@ -65,6 +98,13 @@
             <ul>
               <li><a href="https://github.com/redprl/cooltt">Source on GitHub</a></li>
               <li><a href="https://redprl.github.io/cooltt/cooltt/">Internal documentation</a></li>
+            </ul>
+
+            <h3>Publications and talks</h3>
+            <ul>
+              <li>
+                S. <a href="https://www.jonmsterling.com/abstracts.html#sterling:2022:wits">Make Three To Throw Away: Frontiers in Homotopical Proof Assistants</a>. <em>Workshop on the Implementation of Type Systems</em> (keynote).
+              </li>
             </ul>
 
             <p>

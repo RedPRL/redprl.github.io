@@ -44,6 +44,11 @@ html, button, input, select, textarea,
   color: #e84644;
 }
 
+.algae {
+  font-weight: bold;
+  color: rgb(133,177,96);
+}
+
 .cool {
   color: #135CB7;
 }
