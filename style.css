@@ -1,6 +1,10 @@
-html, button, input, select, textarea,
-.pure-g [class *= "pure-u"] {
-  font-family: 'Roboto', sans-serif;
+html,
+button,
+input,
+select,
+textarea,
+.pure-g [class*="pure-u"] {
+  font-family: "Roboto", sans-serif;
 }
 
 .wrapper {
@@ -46,11 +50,15 @@ html, button, input, select, textarea,
 
 .algae {
   font-weight: bold;
-  color: rgb(133,177,96);
+  color: rgb(133, 177, 96);
 }
 
 .cool {
-  color: #135CB7;
+  color: #135cb7;
+}
+
+.package-name {
+  font-weight: bold;
 }
 
 a {
@@ -66,7 +74,7 @@ ul {
 ul li {
   padding-left: 1.5em;
   background-image: url(img/Red_star.svg);
-  background-position: 0px .1em;
+  background-position: 0px 0.1em;
   background-size: 1em 1em;
   background-repeat: no-repeat;
 }
@@ -81,9 +89,8 @@ ul li {
 }
 
 .content .pure-g h3 {
-  margin-bottom: .5em;
+  margin-bottom: 0.5em;
 }
-
 
 #boxes {
   justify-content: center;

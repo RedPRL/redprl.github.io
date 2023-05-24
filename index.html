@@ -18,9 +18,9 @@
       <div class="pure-g" id="boxes">
 
         <div class="pure-u-2-3 pure-u-md-1-5 box">
-          <a href="#algaett">
-            <h2><span class="algae">algae</span>tt</h2>
-            <p>An experimental elaborator for dependent type theory using effects and handlers.</p>
+          <a href="#algae">
+            <h2><span class="algae">A.L.G.A.E.</span></h2>
+            <p>A collection of libraries for developing proof assistants.</p>
           </a>
         </div>
 
@@ -62,36 +62,41 @@
 
         <div class="pure-g">
           <div class="pure-u-1 pure-u-lg-3-5 left-box">
-            <h2 id="algaett">The <strong><span class="algae">algae</span>tt</strong> experimental elaborator</h2>
+            <h2 id="algae">The <span class="package-name"><span class="algae">A.L.G.A.E.</span></span> Project</h2>
 
             <p>
-            We are exploring the use of algebraic effects and handlers to structure the modular implementation of proof assistants.
-            Our prototype is called <strong><span class="algae">algae</span>tt</strong>, and is implemented using <a href="https://ocaml.org">OCaml</a> 5's new effect primitives rather than monads.
-            </p>
-
+            We are developing composable (OCaml) libraries that facilitate the construction of a usable proof assistant from a core type checker.
+            Currently, we are exploring the use of <span class="algae">algebraic effects</span> (instead of monads) to structure our libraries.
             <ul>
-              <li><a href="https://github.com/redprl/algaett">Source on GitHub</a></li>
+              <li>🦠 <a href="https://github.com/RedPRL/algaeff"><span class="package-name"><span class="algae">algae</span>ff</span></a>: reusable effects-based components</li>
+              <li>🩺 <a href="https://github.com/RedPRL/asai"><span class="package-name">asai</span></a>: Compiler Diagnostics</li>
+              <li>📚 <a href="https://github.com/RedPRL/bantorra"><span class="package-name">bantorra</span></a>: extensible library management and path resolution</li>
+              <li>♾️ <a href="https://github.com/RedPRL/mugen"><span class="package-name">mugen</span></a>: universe levels, generalizing McBride's <a href="https://personal.cis.strath.ac.uk/conor.mcbride/Crude.pdf">crude but effective stratification</a></li>
+              <li>🔙 <a href="https://github.com/RedPRL/ocaml-bwd"><span class="package-name">ocaml-bwd</span></a>: backward lists</li>
+              <li>📚 <a href="https://github.com/RedPRL/kado"><span class="package-name">kado</span></a>: cofibrations in Cartesian cubical type theory</li>
+              <li>👹 <a href="https://github.com/RedPRL/yuujinchou"><span class="package-name">yuujinchou</span></a>: hierarchical names and lexical scoping</li>
             </ul>
 
-            <h3>Components</h3>
+            We have a prototype <a href="https://github.com/redprl/algaett"><span class="package-name"><span class="algae">algae</span>tt</span></a> (in progress) that demonstrates how to build a usable system using these libraries.
+
+            <h3>Publications and talks</h3>
             <ul>
-              <li>🦠 <a href="https://github.com/RedPRL/algaeff"><strong><span class="algae">algae</span>ff</strong></a>: reusable effects-based components</li>
-              <li>👹 <a href="https://github.com/RedPRL/yuujinchou">yuujinchou</a>: name modifiers</li>
-              <li>📚 <a href="https://github.com/RedPRL/bantorra">bantorra</a>: extensible library management and path resolution</li>
-              <li>♾️ <a href="https://github.com/RedPRL/mugen">mugen</a>: universe levels, generalizing McBride's <a href="https://personal.cis.strath.ac.uk/conor.mcbride/Crude.pdf">crude but effective stratification</a>
+              <li>Gratzer, S, A, Coquand, Birkedal. <a href="https://arxiv.org/abs/2210.05420">Controlling unfolding in type theory</a>.</li>
+              <li>F, A, M. <a href="https://doi.org/10.1145/3571250">An Order-Theoretic Analysis of Universe Polymorphism</a>. <em>POPL 2023</em>.</li>
+              <li>F. <a href="https://youtu.be/5Cp8jNrWSjI">A Domain-Specific Language for Name Modifiers</a>. <em>TYPES 2022</em>.</li>
             </ul>
           </div>
         </div>
 
         <div class="pure-g">
           <div class="pure-u-1 pure-u-lg-3-5 left-box">
-            <h2 id="cooltt">The <strong><span class="cool">cool</span>tt</strong> proof assistant</h2>
+            <h2 id="cooltt">The <span class="package-name"><span class="cool">cool</span>tt</span> proof assistant</h2>
 
             <p>
-            We are currently developing <strong><span class="cool">cool</span>tt</strong>, a prototype proof assistant for Cartesian
+            We are currently developing <span class="package-name"><span class="cool">cool</span>tt</span>, a prototype proof assistant for Cartesian
             cubical type theory, building on our previous work on the
-            <strong><span class="revolutionary">red</span>tt</strong> proof assistant.
-            <strong><span class="cool">cool</span>tt</strong> supports <em>systems</em> for eliminating disjunctions
+            <span class="package-name"><span class="revolutionary">red</span>tt</span> proof assistant.
+            <span class="package-name"><span class="cool">cool</span>tt</span> supports <em>systems</em> for eliminating disjunctions
             of cofibrations, implementing the full definitional &eta;-law.
             </p>
 
@@ -119,35 +124,35 @@
 
         <div class="pure-g">
           <div class="pure-u-1 pure-u-lg-3-5 left-box">
-            <h2 id="redtt">The <strong><span class="revolutionary">red</span>tt</strong> proof assistant</h2>
+            <h2 id="redtt">The <span class="package-name"><span class="revolutionary">red</span>tt</span> proof assistant</h2>
 
             <p>
             A proof assistant for Cartesian cubical type theory. Notable features include extension types,
             user-defined (parametric) higher inductive types, and rudimentary higher-order unification;
-            <strong><span class="revolutionary">red</span>tt</strong> pioneered the
+            <span class="package-name"><span class="revolutionary">red</span>tt</span> pioneered the
             <em>boundary-sensitive</em> treatment of holes that now appears in
             <a href="https://agda.readthedocs.io/en/latest/language/cubical.html">Cubical Agda</a> and
-            <strong><span class="cool">cool</span>tt</strong>.</p>
+            <span class="package-name"><span class="cool">cool</span>tt</span>.</p>
 
             <ul>
               <li><a href="https://github.com/redprl/redtt">Source on GitHub</a></li>
               <li><a href="https://github.com/RedPRL/redtt/tree/master/library">The
-                  <strong><span class="revolutionary">red</span>tt</strong>
+                  <span class="package-name"><span class="revolutionary">red</span>tt</span>
                   mathematical library</a></li>
             </ul>
 
             <h3>Publications and talks</h3>
             <ul>
               <li>
-                S. <a href="http://math.andrej.com/2020/06/01/redtt-and-the-future-of-cartesian-cubical-type-theory/"><strong><span class="revolutionary">red</span>tt</strong> and the future of Cartesian cubical type theory</a>.
+                S. <a href="http://math.andrej.com/2020/06/01/redtt-and-the-future-of-cartesian-cubical-type-theory/"><span class="package-name"><span class="revolutionary">red</span>tt</span> and the future of Cartesian cubical type theory</a>.
                 <em>Every proof assistant</em> seminar.
               </li>
               <li>
-                F. <a href="https://www.youtube.com/watch?v=9pc4QkMtrnQ&feature=youtu.be">Towards Efficient Cubical Type Theory</a>.
+                F. <a href="https://youtu.be/9pc4QkMtrnQ">Towards Efficient Cubical Type Theory</a>.
                 <em>Homotopy Type Theory Electronic Seminar Talks (HOTTEST)</em>.
               </li>
               <li>
-                A, C, F, H, M&ouml;rtberg, S. <a href="http://www.jonmsterling.com/pdfs/dagstuhl.pdf"><strong><span class="revolutionary">red</span>tt</strong>: implementing Cartesian cubical type theory</a>.
+                A, C, F, H, M&ouml;rtberg, S. <a href="http://www.jonmsterling.com/pdfs/dagstuhl.pdf"><span class="package-name"><span class="revolutionary">red</span>tt</span>: implementing Cartesian cubical type theory</a>.
                 <em>Dagstuhl Seminar 18341: Formalization of Mathematics in Type Theory</em>.
               </li>
             </ul>
@@ -166,7 +171,7 @@
             <p>
             A tactic-based proof assistant for computational Cartesian cubical type theory inspired by
             <a href="http://www.nuprl.org">Nuprl</a>.
-            <strong><span class="revolutionary">Red</span>PRL</strong> implements a two-level cubical
+            <span class="package-name"><span class="revolutionary">Red</span>PRL</span> implements a two-level cubical
             type theory which includes univalent universes, some higher inductive types, and strict
             equality types with equality reflection.
             </p>
@@ -180,7 +185,7 @@
             <h3>Publications and talks</h3>
             <ul>
               <li>
-                A, C, F, H, S. <a href="http://eptcs.web.cse.unsw.edu.au/paper.cgi?LFMTP2018.1">The <strong><span class="revolutionary">Red</span>PRL</strong> Proof Assistant</a>. LFMTP 2018.
+                A, C, F, H, S. <a href="http://eptcs.web.cse.unsw.edu.au/paper.cgi?LFMTP2018.1">The <span class="package-name"><span class="revolutionary">Red</span>PRL</span> Proof Assistant</a>. LFMTP 2018.
               </li>
               <li>
                 A, H. <a href="https://popl18.sigplan.org/track/POPL-2018-TutorialFest">Computational Higher Type Theory</a>. Tutorial at POPL 2018.
